@@ -1,0 +1,161 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Folder }}",
+  "blocks": [
+    {
+      "type":"prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#007ACC"
+        },
+        {
+          "type": "session",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#444444"
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#91ddff",
+          "properties": {
+            "folder_icon": "\uF115",
+            "folder_separator_icon": "/",
+            "style": "full",
+            "home_icon": "~",
+            "enable_hyperlink":true
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#37833a",
+          "properties": {
+            "branch_icon": "\ue725",
+            "display_status": true,
+            "display_status_detail": true,
+            "display_stash_count": true,
+            "display_upstream_icon": true,
+            "git_icon": "\uf7a1",
+            "status_colors_enabled": true,
+            "local_changes_color": "#FF9D5C",
+            "ahead_and_behind_color": "#cc0000",
+            "behind_color": "#FFB30F",
+            "ahead_color": "#ffea00"
+          }
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#FFD43B",
+          "properties": {
+            "prefix": " \uE235 "
+          }
+        },
+        {
+          "type": "exit",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#ff8080",
+          "properties": {
+            "prefix": " \uE20F"
+          }
+        }
+      ]
+    },
+    {
+      "type":"prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\uE0B2",
+          "foreground": "#ffffff",
+          "background": "#007ACC",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "prefix": " <#fefefe>\ufbab</> "
+          }
+        },
+        {
+          "type":"os",
+          "style":"powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\uE0B2",
+          "background": "#444444",
+          "foreground": "#ffffff",
+          "properties": {
+            "prefix": "",
+            "postfix": " "
+          }
+        },
+        {
+          "type": "battery",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\uE0B2",
+          "foreground": "#ffffff",
+          "background": "#f36943",
+          "properties": {
+            "battery_icon": "",
+            "discharging_icon": "\uf578",
+            "charging_icon": "\uf583",
+            "charged_icon": "\ufba3",
+            "display_charging": true,
+            "color_background": true,
+            "charged_color": "#37833a",
+            "charging_color": "#FF893B",
+            "discharging_color": "#ff5722",
+            "postfix": "\uf295 "
+          }
+        },
+        {
+          "type": "time",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B2",
+          "invert_powerline": true,
+          "background": "#007ACC",
+          "foreground": "#ffffff",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        }
+      ]
+    },
+    {
+      "type":"prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#007ACC",
+          "properties": {
+            "prefix": "",
+            "text": "\u276F"
+          }
+        }
+      ]
+    }
+  ]
+}
