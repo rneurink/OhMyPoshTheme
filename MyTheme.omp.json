@@ -44,12 +44,13 @@
           "foreground": "#100e23",
           "background": "#37833a",
           "properties": {
+            "prefix": " ",
             "branch_icon": "\ue725",
             "display_status": true,
             "display_status_detail": true,
             "display_stash_count": true,
             "display_upstream_icon": true,
-            "git_icon": "\uf7a1",
+            "git_icon": "\uE702",
             "status_colors_enabled": true,
             "local_changes_color": "#FF9D5C",
             "ahead_and_behind_color": "#cc0000",
@@ -72,9 +73,9 @@
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
           "foreground": "#ffffff",
-          "background": "#ff8080",
+          "background": "#B82200",
           "properties": {
-            "prefix": " \uE20F"
+            "prefix": " \uE20F "
           }
         }
       ]
@@ -104,7 +105,7 @@
           "background": "#444444",
           "foreground": "#ffffff",
           "properties": {
-            "prefix": "",
+            "prefix": " ",
             "postfix": " "
           }
         },
